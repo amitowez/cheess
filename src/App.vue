@@ -1,16 +1,21 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+  <div>
+    <CheesseTable/>
+  </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import HelloWorld from './components/HelloWorld.vue';
-
+import CheesseTable from '@/components/table/table.vue'
 export default defineComponent({
   name: 'App',
+  data(){
+    return {
+      test: 'dfasd'
+    }
+  },
   components: {
-    HelloWorld
+    CheesseTable,
   }
 });
 </script>
